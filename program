@@ -1,0 +1,6 @@
+% instance
+person(a).
+
+% encoding
+innocent(a) :- person(a), not guilty(a).
+guilty(a) :- person(a), not innocent(a).
